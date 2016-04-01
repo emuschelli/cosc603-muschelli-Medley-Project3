@@ -134,3 +134,201 @@ java.lang.ClassCastException: org.eclipse.e4.ui.model.application.ui.basic.impl.
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-04-01 15:08:35.733
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [testGetPrice_() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:534)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:568)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:280)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:218)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:291)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:601)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:496)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.getJavadocHtml(JavadocView.java:1097)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.computeInput(JavadocView.java:908)
+	at org.eclipse.jdt.internal.ui.infoviews.AbstractInfoView$2.run(AbstractInfoView.java:717)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2016-04-01 15:08:35.734
+!MESSAGE testGetPrice_() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-04-01 15:08:35.739
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [testGetPrice_Positive() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:534)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:568)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:280)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:218)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:291)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:601)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:496)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.getJavadocHtml(JavadocView.java:1097)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.computeInput(JavadocView.java:908)
+	at org.eclipse.jdt.internal.ui.infoviews.AbstractInfoView$2.run(AbstractInfoView.java:717)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2016-04-01 15:08:35.740
+!MESSAGE testGetPrice_Positive() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-04-01 15:09:02.791
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [testGetPrice_iveNumber() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:534)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:568)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:280)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:218)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:291)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:601)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:496)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.getJavadocHtml(JavadocView.java:1097)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.computeInput(JavadocView.java:908)
+	at org.eclipse.jdt.internal.ui.infoviews.AbstractInfoView$2.run(AbstractInfoView.java:717)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2016-04-01 15:09:02.791
+!MESSAGE testGetPrice_iveNumber() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-04-01 15:09:02.798
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [testGetPrice_Number() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:534)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:568)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:280)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:218)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:291)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:601)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:496)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.getJavadocHtml(JavadocView.java:1097)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.computeInput(JavadocView.java:908)
+	at org.eclipse.jdt.internal.ui.infoviews.AbstractInfoView$2.run(AbstractInfoView.java:717)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2016-04-01 15:09:02.798
+!MESSAGE testGetPrice_Number() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-04-01 16:48:40.065
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [testVendingMachineItem_GreaterThan() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:534)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:568)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:280)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:218)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:291)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:601)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:496)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.getJavadocHtml(JavadocView.java:1097)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.computeInput(JavadocView.java:908)
+	at org.eclipse.jdt.internal.ui.infoviews.AbstractInfoView$2.run(AbstractInfoView.java:717)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2016-04-01 16:48:40.066
+!MESSAGE testVendingMachineItem_GreaterThan() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-04-01 16:48:40.076
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [testVendingMachineItem_Greater() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:534)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:568)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:280)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:218)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:291)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:601)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:496)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.getJavadocHtml(JavadocView.java:1097)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.computeInput(JavadocView.java:908)
+	at org.eclipse.jdt.internal.ui.infoviews.AbstractInfoView$2.run(AbstractInfoView.java:717)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2016-04-01 16:48:40.077
+!MESSAGE testVendingMachineItem_Greater() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-04-01 16:48:40.080
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [testVendingMachineItem_() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:534)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:568)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:280)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:218)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:291)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:601)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:496)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.getJavadocHtml(JavadocView.java:1097)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.computeInput(JavadocView.java:908)
+	at org.eclipse.jdt.internal.ui.infoviews.AbstractInfoView$2.run(AbstractInfoView.java:717)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2016-04-01 16:48:40.081
+!MESSAGE testVendingMachineItem_() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-04-01 16:49:00.622
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [testVendingMachineItem_ThanZero() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:534)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:568)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:280)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:218)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:291)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:601)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:496)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.getJavadocHtml(JavadocView.java:1097)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.computeInput(JavadocView.java:908)
+	at org.eclipse.jdt.internal.ui.infoviews.AbstractInfoView$2.run(AbstractInfoView.java:717)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2016-04-01 16:49:00.622
+!MESSAGE testVendingMachineItem_ThanZero() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-04-01 16:50:48.357
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [testVendingMachineItem_GreaterThanEqZero() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:534)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:568)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:280)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:218)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:291)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:601)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:496)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.getJavadocHtml(JavadocView.java:1097)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.computeInput(JavadocView.java:908)
+	at org.eclipse.jdt.internal.ui.infoviews.AbstractInfoView$2.run(AbstractInfoView.java:717)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2016-04-01 16:50:48.358
+!MESSAGE testVendingMachineItem_GreaterThanEqZero() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-04-01 17:08:37.871
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [testGetName_ItemName() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:534)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:568)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:280)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:218)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:291)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:601)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:496)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.getJavadocHtml(JavadocView.java:1097)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.computeInput(JavadocView.java:908)
+	at org.eclipse.jdt.internal.ui.infoviews.AbstractInfoView$2.run(AbstractInfoView.java:717)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2016-04-01 17:08:37.872
+!MESSAGE testGetName_ItemName() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2016-04-01 17:10:05.092
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [testGetName_INameMissing() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:534)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:568)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:294)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:280)
+	at org.eclipse.jdt.internal.core.SourceRefElement.getSourceRange(SourceRefElement.java:218)
+	at org.eclipse.jdt.internal.core.Member.getJavadocRange(Member.java:291)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContentFromSource(JavadocContentAccess2.java:601)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:496)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.getJavadocHtml(JavadocView.java:1097)
+	at org.eclipse.jdt.internal.ui.infoviews.JavadocView.computeInput(JavadocView.java:908)
+	at org.eclipse.jdt.internal.ui.infoviews.AbstractInfoView$2.run(AbstractInfoView.java:717)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2016-04-01 17:10:05.092
+!MESSAGE testGetName_INameMissing() [in VendingMachineItemTest [in [Working copy] VendingMachineItemTest.java [in edu.towson.cis.cosc603.project4.vendingmachine [in src [in VendingMachine]]]]] does not exist

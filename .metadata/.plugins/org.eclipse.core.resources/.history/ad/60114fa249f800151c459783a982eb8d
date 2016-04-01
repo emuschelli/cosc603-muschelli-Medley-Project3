@@ -1,0 +1,68 @@
+package edu.towson.cis.cosc603.project4.vendingmachine;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class VendingMachineItemTest {
+	
+	VendingMachineItem butterfinger;
+	Double price1;
+	Double price2;
+	
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+		
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+				
+	}
+
+	@Before
+	public void setUp() throws Exception {
+		
+		butterfinger = new VendingMachineItem("Butterfinger",1.50);
+		price1 = 1.00;
+		price2 = .50;
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	//Testing the VendingMachineItem Constructor to 
+	//ensure that price value is not lower then 0
+	public void testVendingMachineItem() {
+		//fail("Not yet implemented");
+		assertTrue(price1>0);
+		assertFalse(price2<0);
+	}
+
+	//@Test
+	//public void testGetName() {
+		//fail("Not yet implemented");
+	//}
+
+	@Test
+	public void testGetPrice_PositiveNumber() {
+		//fail("Not yet implemented");
+		VendingMachineItem snickers = new VendingMachineItem("Snicker", 1.00);
+		assertEquals(1.00,snickers.getPrice(),0.01);
+	}
+	
+	@Test (expected = VendingMachineException.class)
+	//The negative number test case would fail because if you 
+	//give it something less than zero it will throw and exception and fail. We can test for this.
+	public void testGetPrice_NegitiveNumber() {
+		//Performing test for a purchase where the price is not legal.  
+		VendingMachineItem free = new VendingMachineItem("free", -1.00);
+		assertEquals(-1.00,free.getPrice(),0.01);
+	}
+}

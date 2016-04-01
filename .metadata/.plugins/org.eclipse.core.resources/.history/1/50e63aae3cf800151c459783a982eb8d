@@ -1,0 +1,58 @@
+package edu.towson.cis.cosc603.project4.vendingmachine;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class VendingMachineItemTest {
+	
+	
+	//VendingMachineItem snickers;
+		
+	
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+				
+	}
+
+	@Before
+	public void setUp() throws Exception {
+		
+		//snickers = new VendingMachineItem("Snicker", 1.00);
+		//VendingMachineItem snickers = new VendingMachineItem(null, 0);
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	//@Test
+	//public void testVendingMachineItem() {
+		//fail("Not yet implemented");
+	//}
+
+	//@Test
+	//public void testGetName() {
+		//fail("Not yet implemented");
+	//}
+
+	@Test
+	public void testGetPrice() {
+		//fail("Not yet implemented");
+		VendingMachineItem snickers = new VendingMachineItem("Snicker", 1.00);
+		assertEquals(1.00,snickers.getPrice(),0.01);
+
+		//Performing test for a purchase where the price is not legal.  
+		 VendingMachineItem freeCandy = new VendingMachineItem("free", -1.00);
+		 assertEquals(-1.00,freeCandy.getPrice(),0.01;)
+	}
+
+}
