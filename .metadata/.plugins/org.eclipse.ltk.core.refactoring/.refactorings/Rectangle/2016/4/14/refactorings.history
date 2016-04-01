@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Move method &apos;getDiagonal&apos; to &apos;Point&apos;" description="Move method &apos;getDiagonal&apos;" flags="6" id="org.eclipse.move.method" stamp="1459522456961"/>&#x0A;<refactoring comment="Move method &apos;getArea&apos; to &apos;Point&apos;" description="Move method &apos;getArea&apos;" flags="6" id="org.eclipse.move.method" stamp="1459522479950"/>
+</session>

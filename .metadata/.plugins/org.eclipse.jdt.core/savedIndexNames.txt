@@ -1,6 +1,5 @@
 INDEX VERSION 1.127+C:\Users\emusc_000\Documents\GitHub\Project3Erica\cosc603-muschelli-Medley-Project3\.metadata\.plugins\org.eclipse.jdt.core
 3295996359.index
-1749246500.index
 1695716836.index
 1526090862.index
 1139122272.index
