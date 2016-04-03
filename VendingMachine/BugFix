@@ -1,0 +1,22 @@
+Bug Fix.txt file
+
+
+VendingMachineItem.java
+
+There were two potential bugs for this file.  
+This resulted in the price and name variable not being instantiated as having default values.  
+The code change to correct this potential bug would be to instantiate both price and name with 
+the following values within the VendingMachineItem.java file:
+-	Price = 0.00;
+-	Name = “Candy”;
+
+VendingMachine.java
+
+There were three potential bugs for this file.
+This resulted in the "INVALID_AMOUNT_MESSAGE" error message being corrected to state > 0 and not >=0 being 
+presented to the customer; "balance" variable was not instantiated as having default value which we sent
+to  0.00 preventing potential issues with the balance; and "INITIAL_BALANCE" default value being changed from 0 to 0.00 
+preventing potential issues with the "int" value not casting correctly to a double.
+
+It is always good practice to ensure that your variables are declared and instantiated with a default to prevent any 
+possible issues with variable values when being used/passed into methods.  
