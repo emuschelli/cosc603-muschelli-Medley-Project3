@@ -5,6 +5,7 @@
 		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\emusc_000\Downloads\VendingMachine"/>
 			<item value="C:\Users\emusc_000\Downloads\Rectangle"/>
 			<item value="C:\Users\emusc_000\Downloads\Fibonacci"/>
 		</list>

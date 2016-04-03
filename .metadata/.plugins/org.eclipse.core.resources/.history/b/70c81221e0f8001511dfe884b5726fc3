@@ -73,7 +73,7 @@ public class VendingMachineItemTest {
 		assertTrue(price1>=0);
 	}
 	
-	@Test 
+	@Test (expected = VendingMachineException.class)
 	/**
 	 * Testing the VendingMachineItem Constructor to 
 	 * ensure that price value is less then zero value
