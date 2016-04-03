@@ -28,8 +28,7 @@ public class VendingMachine {
 	public static final String D_CODE = "D";
 	
 	// The initial balance of the vending machine
-	//BUG FIX: set INITIAL_BALANCE to 0.00 in place of 0 since value is a double not an int.
-	private static final double INITIAL_BALANCE = 0.00;
+	private static final double INITIAL_BALANCE = 0;
 
 	// Error message for invalid code
 	private static final String INVALID_CODE_MESSAGE = "Invalid code for vending machine item";
