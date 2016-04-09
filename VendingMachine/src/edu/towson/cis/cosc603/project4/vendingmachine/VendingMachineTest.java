@@ -18,6 +18,7 @@ public class VendingMachineTest {
 	VendingMachineItem slotC;
 	VendingMachineItem slotD;
 	
+	//VendingMachineItem amount;
 	
 	Double balance;
 	
@@ -34,6 +35,8 @@ public class VendingMachineTest {
 		slotC = null;
 		slotD = null;
 		balance = 0.0;
+		
+		//amount = new VendingMachineItem("", -1.00);
 	}
 	
 	/**
@@ -61,20 +64,83 @@ public class VendingMachineTest {
 
 	@Test
 	/**
-	 * Testing the getSlotIndex() method to see if the correct slot # is returned for a slot. 
-	 * The following is a negative test condition since A's slot # should be 0.
-	 * the assertNotEquals("A", 1, 0) test passes since we assert that A's slot #
-	 * should not be 1 (implied that it is 0 or other than 1).
-	 * 
-	 * This test is not part of the test cases that we had to write, this is just a test
-	 * to see how the getSlotIndex() method works.
+	 * Testing the getSlotIndex() method 
 	 */
 	
-	public void testGetSlotIndex() {
+	public void testGetSlotIndex_A() {
 		//fail("Not yet implemented");
-		assertNotEquals("A", 1, 0);
+		//assertNotEquals("A", 1, 0);
+		
+		VendingMachine myValueA = new VendingMachine();
+		myValueA.balance = 1.00;
+		String code = "A";
+
+		VendingMachineItem A_CODE = myValueA.getItem(code);
+
+		assertNotEquals("A",A_CODE);
 	}
 	
+	@Test
+	/**
+	 * Testing the getSlotIndex() 
+	 */
+	public void testGetSlotIndex_B() {
+			
+		VendingMachine myValueB = new VendingMachine();
+		myValueB.balance = 2.00;
+		String code = "B";
+
+		VendingMachineItem B_CODE = myValueB.getItem(code);
+
+		assertNotEquals("B",B_CODE);
+	}
+	
+	@Test
+	/**
+	 * Testing the getSlotIndex() method 
+	 */
+	
+	public void testGetSlotIndex_C() {
+				
+		VendingMachine myValueC = new VendingMachine();
+		myValueC.balance = 3.00;
+		String code = "C";
+
+		VendingMachineItem C_CODE = myValueC.getItem(code);
+
+		assertNotEquals("C",C_CODE);
+	}
+
+	@Test
+	/**
+	 * Testing the getSlotIndex() method 
+	 */
+	
+	public void testGetSlotIndex_D() {
+				
+		VendingMachine myValueD = new VendingMachine();
+		myValueD.balance = 4.00;
+		String code = "D";
+
+		VendingMachineItem D_CODE = myValueD.getItem(code);
+		assertNotEquals("D",D_CODE);
+	}
+
+	@Test
+	/**
+	 * Testing the getSlotIndex() method 
+	 */
+	
+	public void testGetSlotIndex_E() throws Exception {
+				
+		VendingMachine myValue = new VendingMachine();
+		myValue.balance = 5.00;
+		String code = "E";
+
+		VendingMachineItem E_CODE = myValue.getItem(code);
+		assertNotEquals("E",E_CODE);
+	}
+
 	@Test
 	/**
 	 * Testing the addItem() method to see if items can be added to a given slot. 
@@ -98,18 +164,25 @@ public class VendingMachineTest {
 	public void testAddItem() {
 		//fail("Not yet implemented");
 		
-		slotA = new VendingMachineItem("Chips", 1.00);
+		//slotA = new VendingMachineItem("Chips", 1.00);
 		//slotB = new VendingMachineItem("Candy", 0.75);
 		//slotC = new VendingMachineItem("Soda", 1.75);
 		//slotD = new VendingMachineItem("Gum", 0.50);
-		assertEquals(slotA.getName(), "Chips");
-		assertEquals(1.00, slotA.getPrice(), 0.001);
+		//assertEquals(slotA.getName(), "Chips");
+		//assertEquals(1.00, slotA.getPrice(), 0.001);
 		//assertEquals(slotB.getName(), "Candy");
 		//assertEquals(0.75, slotB.getPrice(), 0.001); 
 		//assertEquals(slotC.getName(), "Soda");
 		//assertEquals(1.75, slotC.getPrice(), 0.001);
 		//assertEquals(slotD.getName(), "Gum");
 		//assertEquals(0.50, slotD.getPrice(), 0.001);
+		
+		VendingMachine money = new VendingMachine();
+		money.balance = 1.00;
+		VendingMachineItem mySlotA = new VendingMachineItem("Chips", 1.00);
+		String code = "A";
+
+		money.addItem(mySlotA, code);
 	}
 	
 	@Test
@@ -124,11 +197,21 @@ public class VendingMachineTest {
 	 * assertEquals and assertNotEquals assertions were used to test the name and price
 	 * of slotB.
 	 */
-	public void testAddItem_SlotOccupied() {
-		slotA = new VendingMachineItem("Chips", 1.00);
-		slotB = new VendingMachineItem("Chips", 1.00);
-		assertEquals(slotB.getName(), "Chips");
-		assertNotEquals(slotB.getPrice(), 1.50, 0.001);
+	public void testAddItem_SlotOccupied() throws Exception {
+		//slotA = new VendingMachineItem("Chips", 1.00);
+		//slotB = new VendingMachineItem("Chips", 1.00);
+		//assertEquals(slotB.getName(), "Chips");
+		//assertNotEquals(slotB.getPrice(), 1.50, 0.001);
+		
+		VendingMachine money = new VendingMachine();
+		money.balance = 1.00;
+		
+		VendingMachineItem mySlotA = new VendingMachineItem("Chips", 1.00);
+		VendingMachineItem mySlotB = new VendingMachineItem("Crackers", 1.00);
+		String code = "A";
+
+		money.addItem(mySlotA, code);
+		money.addItem(mySlotB, code);
 	}
 
 	@Test
@@ -171,7 +254,13 @@ public class VendingMachineTest {
 	 */
 	public void testInsertMoney() {
 		//fail("Not yet implemented");
-		assertEquals(5.00, (new VendingMachine().getBalance() + 5.00), 0.01);
+		//assertEquals(5.00, (new VendingMachine().getBalance() + 5.00), 0.01);
+		
+		VendingMachine money = new VendingMachine();
+		money.balance = 1.00;
+		double amount = 1.00;
+		money.insertMoney(amount);
+		
 	}
 	
 	@Test
@@ -179,12 +268,20 @@ public class VendingMachineTest {
 	 * Testing the insertMoney_TestForAmount() method to see if money can be input 
 	 * into the machine.  Test fails if amount is less than zero. 
 	 */
-	public void testInsertMoney_TestForAmount() {
+	public void testInsertMoney_TestForAmount() throws Exception {
 		//fail("Not yet implemented");
-		double amount = -1.00;
-		assertTrue(amount < 0);
+		//double amount = -1.00;
+		//assertTrue(amount < 0);
+		//assertEquals(-1.00,amount.getPrice(), .01);
+		//assertEquals(-1.00, (new VendingMachine().getBalance() + -1.00), 0.01);
 		
-	}
+		VendingMachine money = new VendingMachine();
+		money.balance = 1.00;
+		double negitiveAmount = -13.00;
+
+		money.insertMoney(negitiveAmount);
+
+}
 
 	@Test
 	/**
@@ -250,6 +347,25 @@ public class VendingMachineTest {
 		//assertNotEquals(change, balance + 2.00, 0.001);
 	}
 	
+	@Test
+	/**
+	 * Testing the returnChange() for 
+	 * change that has a value greater then zero 
+	 */
+	public void testReturnChange_GreaterThenZero() {
+		//fail("Not yet implemented");
+		//balance = 0.00;
+		//double change = this.balance;
+		//assertEquals(0, balance, 0.01);
+		
+		//Test if change and balance are not the same
+		//assertNotEquals(change, balance + 2.00, 0.001);
+
+		VendingMachine money = new VendingMachine();
+		money.balance = 1.00;
+
+		assertEquals(1.00, money.returnChange(), 0.01);
+	}
 	
 
 }

@@ -11,9 +11,10 @@ import org.junit.Test;
 public class VendingMachineItemTest {
 	
 	/** Declaring necessary test objects for {@link VendingMachindItem} */
-	Double price1;
-	Double price2;
-	Double price3;
+	//Double price1;
+	//Double price2;
+	//Double price3;
+	
 
 	VendingMachineItem butterfinger;
 	VendingMachineItem noName;
@@ -40,10 +41,11 @@ public class VendingMachineItemTest {
 		
 		snickers = new VendingMachineItem("Snicker", 1.00);
 		butterfinger = new VendingMachineItem("Butterfinger",1.50);
+		
 		noName = new VendingMachineItem(null,2.00);
 		
-		price1 = 1.00;
-		price2 = -1.00;
+		//price1 = 1.00;
+		//price2 = -1.00;
 
 	}
 
@@ -52,35 +54,40 @@ public class VendingMachineItemTest {
 	 */
 	@After
 	public void tearDown() throws Exception {
-		price1 = 0.0;
-		price2 = 0.0;
-		price3 = 0.0;
+		//price1 = 0.0;
+		//price2 = 0.0;
+		//price3 = 0.0;
 
 		snickers = new VendingMachineItem(null, 0.00);
 		butterfinger = new VendingMachineItem(null,0.00);
 		noName = new VendingMachineItem(null,0.00);
 	}
-
-	@Test
+	
+	
+	@Test 
 	/**
 	 * Testing the VendingMachineItem Constructor to 
 	 * ensure that price value is greater then or equal to 
 	 * zero value 
 	 */
 	
-	public void testVendingMachineItem_GreaterThanEqualToZero() {
+	public void testVendingMachineItem_GreaterThanEqualToZero() throws Exception {
 		//fail("Not yet implemented");
-		assertTrue(price1>=0);
+		//assertTrue(price1>=0);
+		assertEquals(1.00,snickers.getPrice(),0.01);
 	}
 	
-	@Test 
+	@Test (expected = VendingMachineException.class) 
 	/**
 	 * Testing the VendingMachineItem Constructor to 
 	 * ensure that price value is less then zero value
 	 */
 	public void testVendingMachineItem_LessThanZero() {
 		//fail("Not yet implemented");
-		assertTrue(price2<0);
+		//assertTrue(price2<0);	
+		VendingMachineItem free = new VendingMachineItem("free", -1.00);
+		assertEquals(-1.00,free.getPrice(),0.01);
+
 	}
 
 	@Test
@@ -112,15 +119,15 @@ public class VendingMachineItemTest {
 		assertEquals(1.00,snickers.getPrice(),0.01);
 	}
 	
-	@Test (expected = VendingMachineException.class)
+	//@Test (expected = VendingMachineException.class)
 	/** Testing the GetPrice() for those Vending Items Prices that 
 	 * have a value less then zero.  The VendingMachineException is throw
 	 * for those times with a value less then 0. 
 	 * 
 	 */
-	public void testGetPrice_NegitiveNumber() {
+	//public void testGetPrice_NegitiveNumber() {
 		//Performing test for a purchase where the price is not legal.  
-		VendingMachineItem free = new VendingMachineItem("free", -1.00);
-		assertEquals(-1.00,free.getPrice(),0.01);
-	}
+		//VendingMachineItem free = new VendingMachineItem("free", -1.00);
+		//assertEquals(-1.00,free.getPrice(),0.01);
+	//}
 }
