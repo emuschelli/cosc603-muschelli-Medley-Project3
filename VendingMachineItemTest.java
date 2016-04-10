@@ -1,133 +1,128 @@
 package edu.towson.cis.cosc603.project4.vendingmachine;
 
+import org.junit.*;
 import static org.junit.Assert.*;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-
+/**
+ * The class <code>VendingMachineItemTest</code> contains tests for the class <code>{@link VendingMachineItem}</code>.
+ *
+ * @generatedBy CodePro at 4/10/16 2:11 PM
+ * @author emusc_000
+ * @version $Revision: 1.0 $
+ */
 public class VendingMachineItemTest {
-	
-	/** Declaring necessary test objects for {@link VendingMachindItem} */
-	//Double price1;
-	//Double price2;
-	//Double price3;
-	
-
-	VendingMachineItem butterfinger;
-	VendingMachineItem noName;
-	VendingMachineItem snickers;
-	
-		
-	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
-		
-	}
-
-	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
-	
-	}
-	
 	/**
-	 * Initializes the necessary test objects for the test cases to use.
+	 * Run the VendingMachineItem(String,double) constructor test.
 	 *
-	 * @throws Exception the exception
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 4/10/16 2:11 PM
+	 */
+	@Test
+	public void testVendingMachineItem_1()
+		throws Exception {
+		String name = "";
+		double price = 1.0;
+
+		VendingMachineItem result = new VendingMachineItem(name, price);
+
+		// add additional test code here
+		assertNotNull(result);
+		assertEquals("", result.getName());
+		assertEquals(1.0, result.getPrice(), 1.0);
+	}
+
+	/**
+	 * Run the VendingMachineItem(String,double) constructor test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 4/10/16 2:11 PM
+	 */
+	@Test(expected = edu.towson.cis.cosc603.project4.vendingmachine.VendingMachineException.class)
+	public void testVendingMachineItem_2()
+		throws Exception {
+		String name = "";
+		double price = -4.9E-324;
+
+		VendingMachineItem result = new VendingMachineItem(name, price);
+
+		// add additional test code here
+		assertNotNull(result);
+	}
+
+	/**
+	 * Run the String getName() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 4/10/16 2:11 PM
+	 */
+	@Test
+	public void testGetName_1()
+		throws Exception {
+		VendingMachineItem fixture = new VendingMachineItem("", 1.0);
+
+		String result = fixture.getName();
+
+		// add additional test code here
+		assertEquals("", result);
+	}
+
+	/**
+	 * Run the double getPrice() method test.
+	 *
+	 * @throws Exception
+	 *
+	 * @generatedBy CodePro at 4/10/16 2:11 PM
+	 */
+	@Test
+	public void testGetPrice_1()
+		throws Exception {
+		VendingMachineItem fixture = new VendingMachineItem("", 1.0);
+
+		double result = fixture.getPrice();
+
+		// add additional test code here
+		assertEquals(1.0, result, 0.1);
+	}
+
+	/**
+	 * Perform pre-test initialization.
+	 *
+	 * @throws Exception
+	 *         if the initialization fails for some reason
+	 *
+	 * @generatedBy CodePro at 4/10/16 2:11 PM
 	 */
 	@Before
-	public void setUp() throws Exception {
-		
-		snickers = new VendingMachineItem("Snicker", 1.00);
-		butterfinger = new VendingMachineItem("Butterfinger",1.50);
-		
-		noName = new VendingMachineItem(null,2.00);
-		
-		//price1 = 1.00;
-		//price2 = -1.00;
-
+	public void setUp()
+		throws Exception {
+		// add additional set up code here
 	}
 
 	/**
-	 * Cleans up test objects after a test case is executed.
+	 * Perform post-test clean-up.
+	 *
+	 * @throws Exception
+	 *         if the clean-up fails for some reason
+	 *
+	 * @generatedBy CodePro at 4/10/16 2:11 PM
 	 */
 	@After
-	public void tearDown() throws Exception {
-		//price1 = 0.0;
-		//price2 = 0.0;
-		//price3 = 0.0;
-
-		snickers = new VendingMachineItem(null, 0.00);
-		butterfinger = new VendingMachineItem(null,0.00);
-		noName = new VendingMachineItem(null,0.00);
-	}
-	
-	
-	@Test 
-	/**
-	 * Testing the VendingMachineItem Constructor to 
-	 * ensure that price value is greater then or equal to 
-	 * zero value 
-	 */
-	
-	public void testVendingMachineItem_GreaterThanEqualToZero() throws Exception {
-		//fail("Not yet implemented");
-		//assertTrue(price1>=0);
-		assertEquals(1.00,snickers.getPrice(),0.01);
-	}
-	
-	@Test (expected = VendingMachineException.class) 
-	/**
-	 * Testing the VendingMachineItem Constructor to 
-	 * ensure that price value is less then zero value
-	 */
-	public void testVendingMachineItem_LessThanZero() {
-		//fail("Not yet implemented");
-		//assertTrue(price2<0);	
-		VendingMachineItem free = new VendingMachineItem("free", -1.00);
-		assertEquals(-1.00,free.getPrice(),0.01);
-
+	public void tearDown()
+		throws Exception {
+		// Add additional tear down code here
 	}
 
-	@Test
 	/**
-	 * Testing the GetName() to make sure that an Vending Items
-	 * have a name. 
+	 * Launch the test.
+	 *
+	 * @param args the command line arguments
+	 *
+	 * @generatedBy CodePro at 4/10/16 2:11 PM
 	 */
-	public void testGetName_ItemHasName(){
-		//fail("Not yet implemented");
-		assertNotNull(butterfinger.getName());
+	public static void main(String[] args) {
+		new org.junit.runner.JUnitCore().run(VendingMachineItemTest.class);
 	}
-	@Test
-	/**
-	 * Testing the GetName() for Vending Items that do not
-	 * have a name.
-	 */
-	public void testGetName_ItemNameMissing(){
-		//fail("Not yet implemented");
-		assertNull(noName.getName());
-	}
-	
-	@Test
-	/**
-	 * Testing the GetPrice() that Vending Item Prices
-	 * have a price value greater then or equal to 0.00
-	 */
-	public void testGetPrice_PositiveNumber() {
-		//fail("Not yet implemented");
-		assertEquals(1.00,snickers.getPrice(),0.01);
-	}
-	
-	//@Test (expected = VendingMachineException.class)
-	/** Testing the GetPrice() for those Vending Items Prices that 
-	 * have a value less then zero.  The VendingMachineException is throw
-	 * for those times with a value less then 0. 
-	 * 
-	 */
-	//public void testGetPrice_NegitiveNumber() {
-		//Performing test for a purchase where the price is not legal.  
-		//VendingMachineItem free = new VendingMachineItem("free", -1.00);
-		//assertEquals(-1.00,free.getPrice(),0.01);
-	//}
 }
