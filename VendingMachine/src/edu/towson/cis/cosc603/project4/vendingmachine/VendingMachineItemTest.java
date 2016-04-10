@@ -82,7 +82,7 @@ public class VendingMachineItemTest {
 	 * Testing the VendingMachineItem Constructor to 
 	 * ensure that price value is less then zero value
 	 */
-	public void testVendingMachineItem_LessThanZero() {
+	public void testVendingMachineItem_LessThanZero() throws Exception {
 		//fail("Not yet implemented");
 		//assertTrue(price2<0);	
 		VendingMachineItem free = new VendingMachineItem("free", -1.00);
